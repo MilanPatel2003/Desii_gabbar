@@ -43,6 +43,11 @@ body {
   100% { transform: translateX(-100%); }
 }
 
+
+.carousel-item {
+    height: min-vh-100px;
+}
+
 /* Multi-column dropdown menu for categories */
 .dropdown-menu-categories {
   min-width: 800px;
