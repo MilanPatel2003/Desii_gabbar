@@ -44,43 +44,49 @@
         </span>
       </div>
 
-      <!-- Logo, Search, Icons Row -->
-      <div class=" py-4 px-2 mt-3 px-lg-6">
-        <div class="row align-items-center flex-nowrap">
-          <!-- Logo -->
-          <div class="col-6 col-md-2 d-flex align-items-center">
-            <img src="desi-gabbar-logo1.png" alt="Desi Gabbar Logo" class="align-middle" style="max-width:100%; height:auto;" loading="eager" />
-          </div>
-          <!-- Search Bar -->
-          <div class="col-12 col-md-8 order-2 order-md-1 mt-3 mt-md-0">
-            <form class="w-100" role="search">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  placeholder="Search entire store here..."
-                  aria-label="Search"
-                />
-                <button
-                  class="btn btn-primary border-primary form-control-lg"
-                  type="submit"
-                >
-                  <i class="bi bi-search"></i>
+
+    </header>
+<div class="sticky-top bg-white "> 
+          <!-- Logo, Search, Icons Row -->
+          <div class=" py-4 px-2 mt-3 px-lg-6">
+            <div class="row align-items-center flex-nowrap">
+              <!-- Logo -->
+              <div class="col-6 col-md-2 d-flex align-items-center">
+                <img src="desi-gabbar-logo1.png" alt="Desi Gabbar Logo" class="align-middle" style="max-width:100%; height:auto;" loading="eager" />
+              </div>
+              <!-- Search Bar -->
+              <div class="col-12 col-md-8 order-2 order-md-1 mt-3 mt-md-0">
+                <form class="w-100" role="search">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Search entire store here..."
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn btn-primary border-primary form-control-lg"
+                      type="submit"
+                    >
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Icons -->
+              <div class="col-6 col-md-2 d-flex align-items-center justify-content-evenly order-1 order-md-2 header-icons p-3 fs-4">
+                <a href="#" class="icon-link" aria-label="User"><i class="bi bi-person text-primary"></i></a>
+                <a href="#" class="icon-link" aria-label="Wishlist"><i class="bi bi-heart text-primary"></i></a>
+                <a href="#" class="icon-link" aria-label="Cart"><i class="bi bi-cart text-primary"></i></a>
+                <!-- Hamburger for Mobile (moved from navbar) -->
+                <button class="btn d-md-none ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                  <i class="bi bi-list fs-2"></i>
                 </button>
               </div>
-            </form>
+            </div>
           </div>
-          <!-- Icons -->
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-evenly order-1 order-md-2 header-icons p-3 fs-4">
-            <a href="#" class="icon-link" aria-label="User"><i class="bi bi-person text-primary"></i></a>
-            <a href="#" class="icon-link" aria-label="Wishlist"><i class="bi bi-heart text-primary"></i></a>
-            <a href="#" class="icon-link" aria-label="Cart"><i class="bi bi-cart text-primary"></i></a>
-          </div>
-        </div>
-    </header>
-
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md bg-white py-0 border-bottom bg-gray">
+    <nav class="navbar navbar-expand-md bg-white py-0 border-bottom bg-gray d-none d-md-block">
         <div class="container-fluid px-0">
           <ul class="navbar-nav flex-row w-100">
             <!-- Categories Dropdown (desktop) -->
@@ -186,10 +192,7 @@
               </ul>
             </li>
           </ul>
-          <!-- Hamburger for Mobile -->
-          <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
-            <i class="bi bi-list fs-2"></i>
-          </button>
+
         </div>
       </nav>
     <!-- Sidebar Offcanvas -->
@@ -219,6 +222,7 @@
         </ul>
       </div>
     </div>
+</div> 
 
     <main></main>
 
